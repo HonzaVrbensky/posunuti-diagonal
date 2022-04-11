@@ -1,12 +1,12 @@
 x,y = 1,0
-show = 5
 
 def posunuti():
     global x,y
-    for i in range(show-1):
+    for i in range(4):
         led.unplot(x, y)
         led.unplot(x-1, y+1)
-    for i in range(show-1):
+        
+    for i in range(4):
         led.plot(x, y)
         led.plot(x-1, y+1)
 
